@@ -1,0 +1,19 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: production
+spec:
+  cluster: production
+  kind: Permanent
+  label: Production
+  namespace: production
+  order: 200
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Manual
+  source:
+    ref: master
+    url: https://github.com/zp-config-ro/environment-zp-production.git
+  teamSettings: {}
+status: {}

@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  domain: k8s.zenplanner.net
+  email: ""
+  exposer: Ingress
+  issuer: ""
+  tls: "false"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: ingress-config
